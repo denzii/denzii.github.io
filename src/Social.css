@@ -1,0 +1,15 @@
+.fa {
+    padding-top: 10px;
+    padding-left:42px;
+    font-size: 40px;
+    width: 40px;
+    text-decoration: none;
+    margin: 5px 2px;
+    color: white;
+    padding-right: 45px;
+}
+
+.fa-container {
+    display: flex;
+    justify-content: center;
+}
