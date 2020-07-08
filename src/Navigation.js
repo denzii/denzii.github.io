@@ -19,10 +19,10 @@ class Navigation extends Component {
                 <nav>
                     <a href="#" class="nav-header">{this.props.Header}</a>
                     <input class="menu-btn" type="checkbox" id="menu-btn" />
-                    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
                     <ul class="menu">
                         {NavLinks}
                     </ul>
+                    <label class="menu-icon" htmlFor="menu-btn"><span class="navicon"></span></label>
                 </nav>
             </div>
 

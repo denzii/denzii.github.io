@@ -13,3 +13,10 @@
     display: flex;
     justify-content: center;
 }
+
+@media (max-width: 340px) {
+    .fa {
+        width: 20px;
+        padding-left: 20px;
+    }
+}

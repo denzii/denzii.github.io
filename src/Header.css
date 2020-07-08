@@ -1,5 +1,5 @@
 .midImage{
-    width: 50%;
+    width: 70%;
     max-width: 425px;
     border-radius: 100%;
     border:3px solid #fff;
@@ -9,12 +9,18 @@
 }
 @media (max-width: 55em){
     header{
-        height:400px;
+        height:500px;
     }
 }
 
+@media (max-width: 22em) {
+    header {
+        height: 350px;
+    }
+}
 @media (min-width: 45em){
     header{
         height:600px;
     }
 }
+

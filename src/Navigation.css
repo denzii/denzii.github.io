@@ -54,12 +54,12 @@ nav ul li a{
     z-index: 3;
     letter-spacing: 2px;
     font-size: 14px;
-
     top: 0;
     left: 0;
     margin: auto;
-
     color: #979797;
+    display: flex;
+    justify-content: space-between;
   }
   
   nav ul {
@@ -190,3 +190,4 @@ nav ul li a{
         left:0px;
     }
   }
+
