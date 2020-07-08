@@ -46,7 +46,7 @@ class Supplementary extends Component {
                     <p class="unit-header">PROJECTS</p>
                     <div class="unit-container">
                         <div class="unit">
-                            <a href="https://www.github.com/denzii/"><img src={NetCore} class="project-icon" /></a>
+                            <a href="https://github.com/denzii/AuthManager"><img src={NetCore} class="project-icon" /></a>
                             <h3 class="lead">Auth Server API<br /> <small>April 2020</small></h3>
                             <p class="lead"> A REST appropriated JSON API project built using .NET Core 3.1.
                             The aim of this project is to provide Authentication / Authorization services which would be consumed by third party apps.
@@ -55,7 +55,7 @@ class Supplementary extends Component {
                         </div>
 
                         <div class="unit">
-                            <a href="https://www.github.com/denzii/github.io/"><img src={ReactJS} class="project-icon" /></a>
+                            <a href="https://github.com/denzii/web-portfolio/"><img src={ReactJS} class="project-icon" /></a>
                             <h3 class="lead">Web Portfolio<br /> <small>July 2020</small></h3>
                             <p class="lead"> A simplistic Static Web Portfolio built using ReactJS as a first attempt on learning the framework</p>
                         </div>
@@ -88,7 +88,7 @@ class Supplementary extends Component {
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         );
     }
