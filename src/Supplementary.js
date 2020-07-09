@@ -24,7 +24,7 @@ class Supplementary extends Component {
                     <p class="unit-header">WORK</p>
                     <div class="unit-container">
                         <div class="unit">
-                            <a href="https://www.wrenkitchens.com/"><img src={Wren} class="bigger-icon" /></a>
+                            <a href="https://www.wrenkitchens.com/" target="_blank"><img src={Wren} class="bigger-icon" /></a>
                             <h3 class="lead">Wren Kitchens<br /> <small>October 2018 - February 2020</small></h3>
                             <p class="lead">Worked as a Junior Developer for Wren's Logistics team, my role mainly included but was not limited to backend systems.</p>
                         </div>
@@ -35,7 +35,7 @@ class Supplementary extends Component {
                     <p class="unit-header">EDUCATION</p>
                     <div class="unit-container">
                         <div class="unit">
-                            <a href="https://www.hull.ac.uk/"><img src={Hull} class="bigger-icon" /></a>
+                            <a href="https://www.hull.ac.uk/" target="_blank"><img src={Hull} class="bigger-icon" /></a>
                             <h3 class="lead">University of Hull<br /> <small>2014 - 2018</small></h3>
                             <p class="lead">Bachelor's degree, Computer Software Engineering, First Class with Honours</p>
                         </div>
@@ -46,7 +46,7 @@ class Supplementary extends Component {
                     <p class="unit-header">PROJECTS</p>
                     <div class="unit-container">
                         <div class="unit">
-                            <a href="https://github.com/denzii/AuthManager"><img src={NetCore} class="project-icon" /></a>
+                            <a href="https://github.com/denzii/AuthManager" target="_blank"><img src={NetCore} class="project-icon" /></a>
                             <h3 class="lead">Auth Server API<br /> <small>April 2020</small></h3>
                             <p class="lead"> A REST appropriated JSON API project built using .NET Core 3.1.
                             The aim of this project is to provide Authentication / Authorization services which would be consumed by third party apps.
@@ -55,7 +55,7 @@ class Supplementary extends Component {
                         </div>
 
                         <div class="unit">
-                            <a href="https://github.com/denzii/web-portfolio/"><img src={ReactJS} class="project-icon" /></a>
+                            <a href="https://github.com/denzii/web-portfolio/" target="_blank"><img src={ReactJS} class="project-icon" /></a>
                             <h3 class="lead">Web Portfolio<br /> <small>July 2020</small></h3>
                             <p class="lead"> A simplistic Static Web Portfolio built using ReactJS as a first attempt on learning the framework</p>
                         </div>
@@ -84,7 +84,7 @@ class Supplementary extends Component {
                     <p class="unit-header">RESUME</p>
                     <div class="unit-container">
                         <div class="unit">
-                            <a href={`${Resume}`} target="_blank"><img src={Eye} class="bigger-icon" /></a>
+                            <a href={`${Resume}`} target="_blank" target="_blank"><img src={Eye} class="bigger-icon" /></a>
                         </div>
                     </div>
                 </div>

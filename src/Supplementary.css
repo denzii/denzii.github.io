@@ -83,7 +83,13 @@
 @media (max-width: 400px) {
     .unit {
         width: 250px;
-        padding-left: 10px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 280px) {
+    .unit {
+        width: 200px;
     }
 }
 
@@ -97,7 +103,12 @@
     .unit-container {
         display: flex;
         align-items: center;
-        text-align: center;
         flex-direction: column;
+    }
+}
+
+@media (max-width: 210px) {
+    .project-icon {
+        width: 170px;
     }
 }

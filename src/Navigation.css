@@ -191,3 +191,21 @@ nav ul li a{
     }
   }
 
+  @media (max-width: 235px) {
+    .nav-header {
+        width: 10px;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 350px) {
+  .menu {
+    padding-top: 40px;
+  }
+  
+}
+@media (max-width: 200px) {
+  .menu {
+    margin-left: -30px;
+  }
+}
