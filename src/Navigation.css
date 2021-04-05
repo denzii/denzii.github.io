@@ -37,13 +37,21 @@ nav ul li a{
 }
  */
 
+
  .nav-header{
     font-size: 24px;
-    color: #979797;
+    color: #555555;
     text-decoration: none;
     position: relative;
     right: calc(-30% + 250px);
     white-space: nowrap;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
 }
 
  nav {
@@ -57,7 +65,7 @@ nav ul li a{
     top: 0;
     left: 0;
     margin: auto;
-    color: #979797;
+    color: #555555;
     display: flex;
     justify-content: space-between;
   }
@@ -75,7 +83,7 @@ nav ul li a{
     padding: 20px 20px;
     border-right: 1px solid #F8F8F8;
     text-decoration: none;
-    color: #979797;
+    color: #555555;
 
   }
   
@@ -90,7 +98,7 @@ nav ul li a{
     font-size: 24px;
     padding: 10px 20px;
     text-decoration: none;
-    color: #979797;
+    color: #555555;
   }
   
   /* menu */

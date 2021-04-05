@@ -14,10 +14,10 @@ class Social extends Component {
     render() {
         return (
             <div style={Styles}>
-                <div class="fa-container">
-                    <a href="https://www.linkedin.com/in/deniz-arca/" class="fa"> <FaLinkedin /></a>
-                    <a href="https://www.github.com/denzii/" class="fa"><FaGithub /></a>
-                    <a href="mailto: denizarca.info@gmail.com" class="fa"><FaEnvelope /></a>
+                <div className="fa-container">
+                    <a href="https://www.linkedin.com/in/deniz-arca/" aria-label='Linkedin Profile' className='fa' > <FaLinkedin  /></a>
+                    <a href="https://www.github.com/denzii/" aria-label='Github Profile' className="fa"><FaGithub  /></a>
+                    <a href="mailto: denizarca.info@gmail.com" aria-label='Email Address' className="fa"><FaEnvelope  /></a>
                 </div>
             </div>
         );

@@ -12,17 +12,17 @@ class Navigation extends Component {
             "hobbies",
             "resume"
         ])
-            .map(section => <li><a href={"#" + section}>{section.toUpperCase()}</a></li>);
+            .map(section => <li key={section}><a href={"#" + section}>{section.toUpperCase()}</a></li>);
 
         return (
-            <div class="nav-container">
+            <div className="nav-container">
                 <nav>
-                    <a href="#" class="nav-header">{this.props.Header}</a>
-                    <input class="menu-btn" type="checkbox" id="menu-btn" />
-                    <ul class="menu">
+                    <button onClick={()=>window.scrollTo(0,0)} className="nav-header" >{this.props.Header}</button>
+                    <input className="menu-btn" type="checkbox" id="menu-btn" />
+                    <ul className="menu"> 
                         {NavLinks}
                     </ul>
-                    <label class="menu-icon" htmlFor="menu-btn"><span class="navicon"></span></label>
+                    <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
                 </nav>
             </div>
 

@@ -1,90 +1,83 @@
 import React, { Component } from 'react';
 import './Supplementary.css';
-import Wren from './images/wren.png';
-import Hull from './images/hull3.png';
-import NetCore from './images/project.png'
-import Hike from './images/hike2.png'
-import Meditation from './images/mandala.png'
-import Eye from './images/eye.png'
-import ReactJS from './images/logo192.png'
+import Wren from './images/wren.webp';
+import Hull from './images/hull3.webp';
+import NetCore from './images/project.webp'
+import Hike from './images/hike2.webp'
+import Meditation from './images/mandala.webp'
+import Eye from './images/eye.webp'
+import ReactJS from './images/logo192.webp'
 import Resume from './documents/Deniz_Arca_Resume.PDF'
-
-const Styles = {
-    'backgroundColor': '#2f2f2f', /* Black Gray */
-    'color': '#fff',
-    'height': '75px',
-
-};
 
 class Supplementary extends Component {
     render() {
         return (
-            <div class="supplementaryContainer">
-                <div class="light-background container-fluid" id="work">
-                    <p class="unit-header">WORK</p>
-                    <div class="unit-container">
-                        <div class="unit">
-                            <a href="https://www.wrenkitchens.com/" target="_blank"><img src={Wren} class="bigger-icon" /></a>
-                            <h3 class="lead">Wren Kitchens<br /> <small>October 2018 - February 2020</small></h3>
-                            <p class="lead">Worked as a Junior Developer for Wren's Logistics team, my role mainly included but was not limited to backend systems.</p>
+            <div className="supplementaryContainer">
+                <div className="light-background container-fluid" id="work">
+                    <p className="unit-header">WORK</p>
+                    <div className="unit-container">
+                        <div className="unit">
+                            <a href="https://www.wrenkitchens.com/" target="_blank" rel="noopener noreferrer"><img src={Wren} alt='Wren Kitchens Logo' className="bigger-icon" /></a>
+                            <h3 className="lead">Wren Kitchens<br /> <small>October 2018 - February 2020</small></h3>
+                            <p className="lead">Worked as a Junior Developer for Wren's Logistics team, my role mainly included but was not limited to backend systems.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="dark-background container-fluid" id="education">
-                    <p class="unit-header">EDUCATION</p>
-                    <div class="unit-container">
-                        <div class="unit">
-                            <a href="https://www.hull.ac.uk/" target="_blank"><img src={Hull} class="bigger-icon" /></a>
-                            <h3 class="lead">University of Hull<br /> <small>2014 - 2018</small></h3>
-                            <p class="lead">Bachelor's degree, Computer Software Engineering, First Class with Honours</p>
+                <div className="dark-background container-fluid" id="education">
+                    <p className="unit-header">EDUCATION</p>
+                    <div className="unit-container">
+                        <div className="unit">
+                            <a href="https://www.hull.ac.uk/" target="_blank" rel="noopener noreferrer"><img src={Hull} alt='University of Hull Logo' className="bigger-icon" /></a>
+                            <h3 className="lead">University of Hull<br /> <small>2014 - 2018</small></h3>
+                            <p className="lead">Bachelor's degree, Computer Software Engineering, First Class with Honours</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="light-background container-fluid" id="projects">
-                    <p class="unit-header">PROJECTS</p>
-                    <div class="unit-container">
-                        <div class="unit">
-                            <a href="https://github.com/denzii/AuthManager" target="_blank"><img src={NetCore} class="project-icon" /></a>
-                            <h3 class="lead">Auth Server API<br /> <small>April 2020</small></h3>
-                            <p class="lead"> A REST appropriated JSON API project built using .NET Core 3.1.
+                <div className="light-background container-fluid" id="projects">
+                    <p className="unit-header">PROJECTS</p>
+                    <div className="unit-container">
+                        <div className="unit">
+                            <a href="https://github.com/denzii/AuthManager" target="_blank" rel="noopener noreferrer"><img src={NetCore} alt='.NET Core Logo' className="project-icon" /></a>
+                            <h3 className="lead">Auth Server API<br /> <small>April 2020</small></h3>
+                            <p className="lead"> A REST appropriated JSON API project built using .NET Core 3.1.
                             The aim of this project is to provide Authentication / Authorization services which would be consumed by third party apps.
                             Includes a Unit Test project & a Client Side Library making it easier to implement JWT Bearer Authentication.
                         </p>
                         </div>
 
-                        <div class="unit">
-                            <a href="https://github.com/denzii/web-portfolio/" target="_blank"><img src={ReactJS} class="project-icon" /></a>
-                            <h3 class="lead">Web Portfolio<br /> <small>July 2020</small></h3>
-                            <p class="lead"> A simplistic Static Web Portfolio built using ReactJS as a first attempt on learning the framework</p>
+                        <div className="unit">
+                            <a href="https://github.com/denzii/web-portfolio/" target="_blank" rel="noopener noreferrer"><img src={ReactJS} alt='ReactJS Logo' className="project-icon" /></a>
+                            <h3 className="lead">Web Portfolio<br /> <small>July 2020</small></h3>
+                            <p className="lead"> A simplistic Static Web Portfolio built using ReactJS as a first attempt on learning the framework</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="dark-background container-fluid" id="hobbies">
-                    <p class="unit-header">HOBBIES</p>
+                <div className="dark-background container-fluid" id="hobbies">
+                    <p className="unit-header">HOBBIES</p>
 
-                    <div class="unit-container">
-                        <div class="unit">
-                            <img src={Hike} class="bigger-icon" />
-                            <h3 class="lead">Hiking<br /></h3>
-                            <p class="lead">The best aspect of any hike is spending time with quality people</p>
+                    <div className="unit-container">
+                        <div className="unit">
+                            <img src={Hike} alt='Icon with Tents' className="bigger-icon" />
+                            <h3 className="lead">Hiking<br /></h3>
+                            <p className="lead">The best aspect of any hike is spending time with quality people</p>
                         </div>
 
-                        <div class="unit">
-                            <img src={Meditation} class="bigger-icon" />
-                            <h3 class="lead">Meditation<br /></h3>
-                            <p class="lead">Nothing is better than a sound mind</p>
+                        <div className="unit">
+                            <img src={Meditation} alt='Icon with a mandala' className="bigger-icon" />
+                            <h3 className="lead">Meditation<br /></h3>
+                            <p className="lead">Nothing is better than a sound mind</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="light-background container-fluid" id="resume">
-                    <p class="unit-header">RESUME</p>
-                    <div class="unit-container">
-                        <div class="unit">
-                            <a href={`${Resume}`} target="_blank" target="_blank"><img src={Eye} class="bigger-icon" /></a>
+                <div className="light-background container-fluid" id="resume">
+                    <p className="unit-header">RESUME</p>
+                    <div className="unit-container">
+                        <div className="unit">
+                            <a href={`${Resume}`} target="_blank" rel="noopener noreferrer"><img src={Eye} alt='Icon with an eye' className="bigger-icon" /></a>
                         </div>
                     </div>
                 </div>

@@ -1,31 +1,31 @@
-import React, { StrictMode, Component } from 'react';
-import ReactDOM from 'react-dom';
+
+// import * as serviceWorker from './serviceWorker';
 import './index.css';
-import * as serviceWorker from './serviceWorker';
+import { hot } from 'react-hot-loader/root';
+import React, { lazy, Suspense } from 'react';
+import ReactDOM from 'react-dom';
 
-//could also import without the .js extension
-import Navigation from './Navigation.js';
-import Header from './Header.js';
-import Social from './Social.js';
-import Supplementary from './Supplementary.js';
+const Navigation = lazy(() => import('./Navigation.js'));
+const Header = lazy(() => import('./Header.js'));
+const Social = lazy(() => import('./Social.js'));
+const Supplementary = lazy(() => import('./Supplementary.js'));
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <Navigation Header="Deniz Arca" />
-        <Header />
-        <Social />
-        <Supplementary />
-      </div>
-    );
-  }
+class App extends React.Component {
+    render () {
+      return (
+        <>
+          <Suspense fallback={<></>}>
+          <Navigation Header="Deniz Arca" />
+          <Header />
+          <Social />
+          <Supplementary />
+          </Suspense>
+        </>
+      );
+    }
 }
 
-//below line connects the app with index.html
-//can specify an imported class by doing <ClassName />
-//any usage in between <React.StrictMode> tags will include additional checks to help with dev
-ReactDOM.render(<StrictMode> <App /> </StrictMode>, document.getElementById('root'));
+ReactDOM.render(<App/>, document.getElementById('root'));
+// serviceWorker.unregister();
 
-
-serviceWorker.unregister();
+export default hot(App);
